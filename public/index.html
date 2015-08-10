@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Catalyst</title>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="561115019980-5t9gq22jaj40ah0r42scbnk2d1g6bs2a.apps.googleusercontent.com">
+        <script type="text/javascript">
+            function onSignIn(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                console.log('Name: ' + profile.getName());
+                console.log('Image URL: ' + profile.getImageUrl());
+                console.log('Email: ' + profile.getEmail());
+            }
+        </script>
+
+    </head>
+    <body>
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </body>
+</html>

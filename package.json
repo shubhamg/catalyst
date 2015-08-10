@@ -1,0 +1,24 @@
+{
+  "name": "catalyst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "google-auth-library": "^0.9.6",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamg/catalyst.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhamg/catalyst/issues"
+  },
+  "homepage": "https://github.com/shubhamg/catalyst#readme"
+}
