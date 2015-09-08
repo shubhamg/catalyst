@@ -1,18 +1,18 @@
 module.exports = function(app, passport) {
-	app.get('/', function(req, rep){
-		res.render('index.ejs');
+	app.get('/', function(req, res){
+		res.render('index.jade');
 	});
 
-	app.get('/login', function(req, rep){
-		res.render('login.ejs', {message: req.flash('loginMessage')});
+	app.get('/login', function(req, res){
+		res.render('login.jade', {message: req.flash('loginMessage')});
 	});
 
-	app.post('/login', function(req, rep){
-		// res.render('login.ejs', {message: req.flash('loginMessage')});
+	app.post('/login', function(req, res){
+		// res.render('login.jade', {message: req.flash('loginMessage')});
 	});
 
 	app.get('/profile', isLoggedIn, function(req, res){
-		res.render('profile.ejs', {
+		res.render('profile.jade', {
 			user: req.user
 		});
 	});

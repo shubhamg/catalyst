@@ -18,14 +18,16 @@ app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(bodyParser());
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'jade');
 
 app.use(session({ secret: 'shubyshubyshuby'}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 
+app.use(express.static(__dirname + '/public'));
+
 require('./app/routes.js')(app, passport);
 
-app.listed(port);
+app.listen(port);
 console.log('The magic happens on port' + port);
